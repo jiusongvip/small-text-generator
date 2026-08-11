@@ -1,0 +1,65 @@
+# Small Text Generator (SmallTextGen)
+
+## Overview
+Small Text Generator is a free online tool that converts regular text into small Unicode characters. It supports 9 styles: Small Caps, Superscript, Subscript, Numbers (superscript & subscript), Bubble Text, Bold, Italic, and Bold Italic. No ads, no sign-up required. All text conversion happens locally in the browser.
+
+## How It Works
+The tool maps each regular character to its corresponding Unicode superscript, subscript, small-cap, circled, or mathematical bold/italic character. These Unicode characters are real text (not a font), so they can be copied and pasted anywhere that supports text input — Instagram, TikTok, Twitter/X, Discord, gaming platforms, and messaging apps.
+
+## Supported Styles
+- Small Caps: petite capital letters with 100% letter coverage (ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀꜱᴛᴜᴠᴡ×ʏᴢ)
+- Superscript: tiny raised letters, 23 of 26 mapped (ᵃᵇᶜᵈᵉᶠᵍʰⁱʲᵏˡᵐⁿᵒᵖᑫʳˢᵗᵘᵛʷˣʸᶻ)
+- Subscript: tiny lowered letters, 18 of 26 mapped (ₐₑₕᵢⱼₖₗₘₙₒₚᵣₛₜᵤᵥₓ)
+- Numbers (superscript): ⁰¹²³⁴⁵⁶⁷⁸⁹
+- Numbers (subscript): ₀₁₂₃₄₅₆₇₈₉
+- Bubble Text: circled letters and numbers (ⒶⒷⒸⒹⒺⒻⒼⒽⒾⒿⓀⓁⓂⓃⓄⓅⓆⓇⓈⓉⓊⓋⓌⓍⓎⓏ)
+- Bold: mathematical bold (𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙)
+- Italic: mathematical italic (𝐴𝐵𝐶𝐷𝐸𝐹𝐺𝐻𝐼𝐽𝐾𝐿𝑀𝑁𝑂𝑃𝑄𝑅𝑆𝑇𝑈𝑉𝑊𝑋𝑌𝑍)
+- Bold Italic: mathematical bold italic (𝑨𝑩𝑪𝑫𝑬𝑭𝑮𝑯𝑰𝑱𝑲𝑳𝑴𝑵𝑶𝑷𝑸𝑹𝑺𝑻𝑼𝑽𝑾𝑿𝒀𝒁)
+
+## Site Structure
+
+### Main Tool
+- / — Full small text generator with all 9 styles, scene previews, platform picker
+
+### Dedicated Tool Pages (with complete character mapping tables)
+- /superscript-text — Superscript text generator with A-Z mapping
+- /subscript-text — Subscript text generator with gap documentation
+- /small-caps-text — Small caps text generator (100% alphabet coverage)
+- /tiny-numbers — Tiny numbers generator with superscript/subscript digits
+
+### Blog (Platform-Specific Guides)
+- /blog — Blog index with all guides
+- /blog/small-text-for-social-media — Instagram, TikTok, Twitter/X guide (~1,500 words)
+- /blog/small-text-for-discord — Discord messages, nicknames, status guide (~1,200 words)
+- /blog/small-text-for-gaming — Steam, Valorant, Fortnite, LoL compatibility guide (~1,000 words)
+
+### Other Pages
+- /about — About the tool, technical architecture, privacy commitment
+- /privacy — Privacy policy (zero data collection)
+
+## Where Small Text Works
+- Instagram bio and captions
+- TikTok username and profile
+- Twitter/X display name and posts
+- Discord messages, usernames, and custom status
+- Gaming nicknames (Steam, Valorant, Fortnite, Minecraft, Apex Legends)
+- YouTube comments and descriptions
+- Reddit posts and comments
+- WhatsApp and iMessage
+
+## Key Differentiators
+- 9 styles at once (most tools only offer 3)
+- Numbers conversion included (unique feature — no competitor does this)
+- Real-time conversion (no button clicks needed)
+- Dynamic scene preview (see text in simulated Instagram, Twitter, Discord)
+- Platform-specific style recommendations
+- Complete character mapping tables on every dedicated page
+- Zero ads, no sign-up required, no tracking
+- Mobile-first design
+- All text processing happens locally in the browser
+
+## Limitations
+- Not all letters have Unicode small equivalents (especially in subscript: 18 of 26)
+- Search engines may not interpret small text as readable text
+- Some platforms may render Unicode characters differently

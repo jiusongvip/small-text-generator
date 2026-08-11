@@ -1,0 +1,38 @@
+---
+export interface Props {
+  ogImage?: string;
+  title?: string;
+  description?: string;
+  canonicalUrl?: string;
+}
+const { ogImage, title, description, canonicalUrl } = Astro.props;
+const defaultOgImage = ogImage || "/og-image.png";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    {title ? <title>{title}</title> : null}
+    {description ? <meta name="description" content={description} /> : null}
+    {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:image" content={`https://small-text-generator.com${defaultOgImage}`} />
+    <meta name="twitter:image" content={`https://small-text-generator.com${defaultOgImage}`} />
+    <slot name="extra-head" />
+  </head>
+  <body class="min-h-[100dvh] font-sans">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import "../styles/global.css";
+</style>

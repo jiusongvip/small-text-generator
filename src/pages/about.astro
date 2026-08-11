@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="About SmallTextGen - Free, Ad-Free Small Text Generator"
+  description="About SmallTextGen. We built the cleanest, fastest small text generator on the web. No ads, no tracking, no sign-ups. Learn how our tool works and why we made it."
+  canonicalUrl="https://small-text-generator.com/about"
+>
+  <Fragment slot="extra-head">
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"AboutPage","name":"About SmallTextGen","description":"SmallTextGen is a free, ad-free small text generator built for speed and simplicity. All text conversion happens locally in your browser.","url":"https://small-text-generator.com/about","dateModified":"2026-08-11"}
+    </script>
+  </Fragment>
+
+  <header class="sticky top-0 z-50 border-b border-zinc-200/80 bg-zinc-50/90 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/90">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2.5 font-semibold text-lg tracking-tight text-zinc-900 dark:text-zinc-100">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-600 text-white text-sm font-bold">s</span>
+        <span class="hidden sm:inline">SmallTextGen</span>
+      </a>
+      <a href="/" class="text-sm font-medium text-accent-600 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300">Back to Generator</a>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-4 pt-16 pb-16">
+    <h1 class="mb-8 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">About SmallTextGen</h1>
+    <div class="space-y-10 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+
+      <div>
+        <p>SmallTextGen is a free, ad-free online tool for generating small text using Unicode superscript, subscript, and small caps characters. It was built with one goal: <strong class="text-zinc-800 dark:text-zinc-200">make the fastest, cleanest small text generator on the web.</strong></p>
+        <p class="mt-3">Unlike most small text generator sites, we do not run ads, we do not track you, and we do not require sign-ups. All text conversion happens entirely in your browser — your text never leaves your device, never touches a server, and is never stored.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">Why We Built This</h2>
+        <p>We analyzed every top-ranking small text generator on Google (smalltext.io, LingoJam, CapitalizeMyTitle, YayText, FontVilla, and others). Across all of them, we found the same problems: intrusive ads slowing down pages, cookie consent popups interrupting workflows, tools that required clicking buttons instead of real-time conversion, and mobile experiences that felt like afterthoughts.</p>
+        <p class="mt-3">We built SmallTextGen to be the tool <strong class="text-zinc-800 dark:text-zinc-200">we wished existed</strong>: instant, clean, mobile-first, and completely free of distractions.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">What Makes Us Different</h2>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>5 styles at once:</strong> Small Caps, Superscript, Subscript, and two Number styles — all visible simultaneously. No tabs, no scrolling, no hunting.</li>
+          <li><strong>Real-time conversion:</strong> Type and see results instantly. No “Convert” button needed. Every keystroke updates all 5 outputs.</li>
+          <li><strong>Numbers included:</strong> We are the only small text generator that converts digits 0-9 and math symbols (+, -, =) into superscript and subscript format. This was the #1 most-requested missing feature across all competitors.</li>
+          <li><strong>Platform intelligence:</strong> Platform Picker tells you which style works best on Instagram vs Discord vs TikTok vs gaming. No other tool gives platform-specific recommendations.</li>
+          <li><strong>Scene preview:</strong> See exactly how your text looks in simulated Instagram, Twitter, and Discord interfaces before you paste.</li>
+          <li><strong>Zero ads, zero tracking:</strong> No Google AdSense, no analytics trackers, no cookie banners. Just a clean tool.</li>
+          <li><strong>Comprehensive guides:</strong> Our blog has platform-specific guides for Instagram, Discord, TikTok, and gaming — written from real testing on each platform.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">Technical Architecture</h2>
+        <p>SmallTextGen is built with <strong>Astro 5</strong> for static site generation, <strong>Tailwind CSS v4</strong> for styling, and vanilla JavaScript for the conversion engine. Key technical details:</p>
+        <ul class="list-disc pl-5 space-y-2 mt-3">
+          <li><strong>Static HTML output:</strong> No server-side rendering at runtime. Pages are pre-built and served as static files for maximum speed.</li>
+          <li><strong>Client-side conversion:</strong> All text transformation happens in your browser using JavaScript character mapping. Your input never leaves your device.</li>
+          <li><strong>Deployed on Vercel:</strong> Global CDN distribution for sub-second load times worldwide.</li>
+          <li><strong>Page weight:</strong> The main tool page is approximately 48 KB (including inline CSS and JS). It loads faster than every competing tool we tested.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">Our Content Methodology</h2>
+        <p>Every guide on our blog is based on <strong>actual testing on the live platforms</strong>. When we say “superscript renders well on Discord,” we tested it on Discord desktop (Windows, macOS) and mobile (iOS, Android). When we say “small caps are partial on Steam,” we created a Steam account and tried it. We do not publish untested claims.</p>
+        <p class="mt-3">We update our content when platforms change their Unicode support policies. Last content review: <strong>August 2026</strong>.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">Privacy Commitment</h2>
+        <p>SmallTextGen collects <strong>zero personal data</strong>. There are no user accounts, no cookies beyond what the CDN requires for routing, no analytics, and no third-party trackers. Your text is processed entirely in your browser's memory and never transmitted anywhere. For full details, see our <a href="/privacy" class="text-accent-600 hover:underline">Privacy Policy</a>.</p>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">Contact &amp; Feedback</h2>
+        <p>SmallTextGen is an independent project. We read every piece of feedback we receive and use it to improve the tool. If you have a suggestion, found a bug, or want to report a compatibility issue with a platform, reach out. Email us at <a href="mailto:hello@small-text-generator.com" class="text-accent-600 hover:underline">hello@small-text-generator.com</a></p>
+      </div>
+    </div>
+  </main>
+</Layout>

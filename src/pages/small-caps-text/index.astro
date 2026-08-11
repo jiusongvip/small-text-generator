@@ -1,0 +1,173 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout
+  title="Small Caps Text Generator - Complete A-Z Mapping | SmallTextGen"
+  description="Generate small caps text with 100% alphabet coverage. Complete A-Z Unicode mapping table with every letter's small capital equivalent. Free, instant, no ads."
+  canonicalUrl="https://small-text-generator.com/small-caps-text"
+>
+  <Fragment slot="extra-head">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Small Caps Text Generator",
+        "url":"https://small-text-generator.com/small-caps-text",
+        "description": "Convert lowercase letters into Unicode small capital characters. Complete A-Z mapping table included.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All", "dateModified": "2026-08-11"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {"@type":"Question","name":"What are small caps?","acceptedAnswer":{"@type":"Answer","text":"Small caps are uppercase letters drawn at the height of lowercase letters. In Unicode, they are separate characters that work anywhere text is supported. Unlike changing font size, Unicode small caps can be copied and pasted into social media bios, gaming nicknames, and messaging apps."}},
+          {"@type":"Question","name":"Do all letters have small caps equivalents?","acceptedAnswer":{"@type":"Answer","text":"Yes, all 26 lowercase letters a-z have Unicode small caps equivalents. This makes small caps the most complete small text alphabet available. Uppercase letters A-Z remain as-is since they already serve as capitals."}},
+          {"@type":"Question","name":"Where do small caps work best?","acceptedAnswer":{"@type":"Answer","text":"Small caps work well on Instagram, Twitter/X, TikTok, YouTube, and most social media platforms. They render partially on Discord and gaming platforms. For maximum compatibility, superscript is a safer choice."}}
+        ]
+      }
+    </script>
+  </Fragment>
+
+  <header class="sticky top-0 z-50 border-b border-zinc-200/80 bg-zinc-50/90 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/90">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2.5 font-semibold text-lg tracking-tight text-zinc-900 dark:text-zinc-100">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-600 text-white text-sm font-bold">s</span>
+        <span class="hidden sm:inline">SmallTextGen</span>
+      </a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <a href="/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Main Tool</a>
+        <a href="/superscript-text" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Superscript</a>
+        <a href="/subscript-text" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Subscript</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-4 pt-12 pb-16">
+    <div class="mb-2 inline-flex items-center gap-1.5 rounded-full bg-accent-100 px-3 py-1 text-xs font-semibold text-accent-700 dark:bg-accent-900/40 dark:text-accent-300">Most Complete Alphabet</div>
+    <h1 class="mb-4 text-4xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-100">Small Caps Text Generator</h1>
+    <p class="mb-8 text-base leading-relaxed text-zinc-500 dark:text-zinc-400">Generate petite capital letters from regular text. Complete A-Z Unicode mapping. The most comprehensive small caps alphabet available — all 26 letters have equivalents.</p>
+
+    <!-- Tool -->
+    <div class="rounded-xl border border-zinc-200 bg-white p-4 dark:border-zinc-800 dark:bg-zinc-900">
+      <textarea id="input" rows="2" placeholder="Type or paste your text here..." class="w-full resize-none rounded-lg border border-zinc-300 bg-white px-4 py-3 text-base font-medium text-zinc-900 placeholder:text-zinc-400 focus:border-accent-500 focus:outline-none focus:ring-2 focus:ring-accent-500/20 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder:text-zinc-500" autofocus></textarea>
+      <div class="mt-3 flex items-center justify-between">
+        <span class="text-xs font-semibold uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Small Caps Output</span>
+        <div class="flex items-center gap-2">
+          <button id="copy-btn" class="flex items-center gap-1 rounded-lg border border-zinc-200 bg-white px-2.5 py-1.5 text-xs font-medium text-zinc-500 hover:border-accent-300 hover:text-accent-600 dark:border-zinc-700 dark:bg-zinc-800 dark:text-zinc-400 dark:hover:border-accent-600 dark:hover:text-accent-400">Copy</button>
+          <span id="copied" class="hidden text-xs font-semibold text-accent-600 dark:text-accent-400">✓ Copied!</span>
+        </div>
+      </div>
+      <div id="output" class="mt-2 min-h-[2em] break-all rounded-lg bg-zinc-50 px-4 py-3 text-2xl font-medium text-zinc-800 dark:bg-zinc-800/50 dark:text-zinc-200" style="font-family:system-ui">ᴡᴇᴢ ᴀᴄᴇ</div>
+    </div>
+
+    <!-- Content -->
+    <div class="mt-14 space-y-10">
+      <div>
+        <h2 class="mb-3 text-xl font-semibold text-zinc-900 dark:text-zinc-100">What Are Small Caps?</h2>
+        <div class="space-y-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+          <p>Small caps (short for “small capitals”) are uppercase letterforms drawn at approximately the x-height of lowercase letters. They’ve been used in professional typography for centuries — book publishers use them for chapter openings, designers use them for logos, and editors use them for acronyms like <strong>NASA</strong> or <strong>UNESCO</strong>.</p>
+          <p>In the Unicode standard, small caps exist as <strong>separate characters</strong> from regular letters. This is important because it means you can copy and paste small caps text anywhere that accepts text input — Instagram bios, Twitter/X names, Discord messages, gaming nicknames — without needing font formatting.</p>
+          <p>Small caps are the <strong>most complete small text alphabet</strong> in Unicode. All 26 lowercase letters (a through z) have dedicated small cap equivalents. No other small text style achieves 100% letter coverage.</p>
+        </div>
+      </div>
+
+      <!-- Complete Mapping Table -->
+      <div>
+        <h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Complete A-Z Small Caps Mapping</h2>
+        <p class="mb-4 text-sm text-zinc-500 dark:text-zinc-400">Every lowercase letter has a Unicode small caps equivalent. Here’s the full table:</p>
+        <div class="overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <table class="w-full text-sm">
+            <thead><tr class="border-b border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/50"><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Letter</th><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Small Caps</th><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Letter</th><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Small Caps</th></tr></thead>
+            <tbody class="text-zinc-600 dark:text-zinc-400">
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">a</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴀ</td><td class="px-4 py-2.5 font-mono text-base">n</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ɴ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">b</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ʙ</td><td class="px-4 py-2.5 font-mono text-base">o</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴏ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">c</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴄ</td><td class="px-4 py-2.5 font-mono text-base">p</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴘ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">d</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴅ</td><td class="px-4 py-2.5 font-mono text-base">q</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ǫ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">e</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴇ</td><td class="px-4 py-2.5 font-mono text-base">r</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ʀ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">f</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ꜰ</td><td class="px-4 py-2.5 font-mono text-base">s</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ꜱ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">g</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ɢ</td><td class="px-4 py-2.5 font-mono text-base">t</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴛ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">h</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ʜ</td><td class="px-4 py-2.5 font-mono text-base">u</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴜ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">i</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ɪ</td><td class="px-4 py-2.5 font-mono text-base">v</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴠ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">j</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴊ</td><td class="px-4 py-2.5 font-mono text-base">w</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴡ</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">k</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴋ</td><td class="px-4 py-2.5 font-mono text-base">x</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">×</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-2.5 font-mono text-base">l</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ʟ</td><td class="px-4 py-2.5 font-mono text-base">y</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ʏ</td></tr>
+              <tr><td class="px-4 py-2.5 font-mono text-base">m</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴍ</td><td class="px-4 py-2.5 font-mono text-base">z</td><td class="px-4 py-2.5 text-lg" style="font-family:system-ui">ᴢ</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 text-xs text-zinc-400 dark:text-zinc-500">Note: Uppercase A-Z remain unchanged — small caps is a lowercase-to-petite-capitals conversion. Numbers and special characters also remain as-is.</p>
+      </div>
+
+      <!-- Platform Compatibility -->
+      <div>
+        <h2 class="mb-3 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Where Small Caps Work Best</h2>
+        <div class="overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-800">
+          <table class="w-full text-sm">
+            <thead><tr class="border-b border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/50"><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Platform</th><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Compatibility</th><th class="px-4 py-3 text-left font-semibold text-zinc-700 dark:text-zinc-300">Notes</th></tr></thead>
+            <tbody class="text-zinc-600 dark:text-zinc-400">
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-3 font-medium text-zinc-700 dark:text-zinc-300">Instagram</td><td class="px-4 py-3"><span class="text-accent-600 font-medium">Full</span></td><td class="px-4 py-3">All 26 letters render. Great for polished, editorial bios.</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-3 font-medium text-zinc-700 dark:text-zinc-300">TikTok</td><td class="px-4 py-3"><span class="text-accent-600 font-medium">Full</span></td><td class="px-4 py-3">Works in bios and names. Username support varies.</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-3 font-medium text-zinc-700 dark:text-zinc-300">Twitter/X</td><td class="px-4 py-3"><span class="text-accent-600 font-medium">Full</span></td><td class="px-4 py-3">Excellent for display names with a professional feel.</td></tr>
+              <tr class="border-b border-zinc-100 dark:border-zinc-800/50"><td class="px-4 py-3 font-medium text-zinc-700 dark:text-zinc-300">Discord</td><td class="px-4 py-3">Partial</td><td class="px-4 py-3">Some letters may not render on all devices. Superscript is safer.</td></tr>
+              <tr><td class="px-4 py-3 font-medium text-zinc-700 dark:text-zinc-300">Gaming (Steam)</td><td class="px-4 py-3">Partial</td><td class="px-4 py-3">Profile names support most letters. In-game varies by title.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div>
+        <h2 class="mb-4 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Frequently Asked Questions</h2>
+        <div class="space-y-2">
+          <details class="group rounded-xl border border-zinc-200 dark:border-zinc-800">
+            <summary class="cursor-pointer px-5 py-4 font-medium text-zinc-800 dark:text-zinc-200 text-sm">What are small caps and how do they differ from regular capitals?</summary>
+            <div class="px-5 pb-4 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">Small caps are uppercase letters drawn at the x-height of lowercase letters, giving them a more subtle, typographic appearance. Unlike CSS font-variant or word processor formatting, Unicode small caps are actual characters that can be pasted into any text field. Regular capitals (A-Z) are taller and visually louder.</div>
+          </details>
+          <details class="group rounded-xl border border-zinc-200 dark:border-zinc-800">
+            <summary class="cursor-pointer px-5 py-4 font-medium text-zinc-800 dark:text-zinc-200 text-sm">Why use small caps instead of regular uppercase?</summary>
+            <div class="px-5 pb-4 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">Regular uppercase can feel SHOUTY. Small caps convey professionalism and restraint. They’re ideal for brand names, acronyms, headings, and situations where you want emphasis without aggression. Typographers have preferred small caps over full caps for centuries.</div>
+          </details>
+          <details class="group rounded-xl border border-zinc-200 dark:border-zinc-800">
+            <summary class="cursor-pointer px-5 py-4 font-medium text-zinc-800 dark:text-zinc-200 text-sm">Do small caps work on all devices?</summary>
+            <div class="px-5 pb-4 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">Most modern devices running iOS 12+, Android 8+, Windows 10+, or macOS support all 26 small caps characters. Older systems may display some characters as boxes. If you see boxes instead of small caps, try using superscript text instead for broader compatibility.</div>
+          </details>
+        </div>
+      </div>
+
+      <!-- Internal links -->
+      <div class="rounded-xl border border-zinc-200 p-5 dark:border-zinc-800">
+
+      <!-- Related Guides -->
+      <div class="rounded-xl border border-accent-200 bg-accent-50/30 p-5 dark:border-accent-900/30 dark:bg-accent-950/10">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-sm">📖</span>
+          <h3 class="text-sm font-semibold text-zinc-900 dark:text-zinc-100">Related Guide</h3>
+        </div>
+        <a href="/blog/small-text-for-social-media" class="text-sm font-medium text-accent-600 hover:text-accent-700 dark:text-accent-400 dark:hover:text-accent-300 hover:underline">Small Text for Social Media</a>
+        <p class="mt-1 text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">Complete guide to using small text on Instagram, TikTok, Twitter/X. Style recommendations and platform quirks.</p>
+      </div>
+
+        <h3 class="mb-3 text-sm font-semibold text-zinc-900 dark:text-zinc-100">Try Other Styles</h3>
+        <div class="flex flex-wrap gap-2">
+          <a href="/superscript-text" class="rounded-lg border border-zinc-200 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:border-accent-300 hover:text-accent-600 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-accent-600 dark:hover:text-accent-400">Superscript</a>
+          <a href="/subscript-text" class="rounded-lg border border-zinc-200 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:border-accent-300 hover:text-accent-600 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-accent-600 dark:hover:text-accent-400">Subscript</a>
+          <a href="/tiny-numbers" class="rounded-lg border border-zinc-200 px-3 py-1.5 text-xs font-medium text-zinc-600 hover:border-accent-300 hover:text-accent-600 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-accent-600 dark:hover:text-accent-400">Tiny Numbers</a>
+          <a href="/" class="rounded-lg bg-accent-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-accent-700">Full Generator →</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
+
+<script is:inline>
+(function(){
+  var SC={"a":"ᴀ","b":"ʙ","c":"ᴄ","d":"ᴅ","e":"ᴇ","f":"ꜰ","g":"ɢ","h":"ʜ","i":"ɪ","j":"ᴊ","k":"ᴋ","l":"ʟ","m":"ᴍ","n":"ɴ","o":"ᴏ","p":"ᴘ","q":"ǫ","r":"ʀ","s":"ꜱ","t":"ᴛ","u":"ᴜ","v":"ᴠ","w":"ᴡ","x":"×","y":"ʏ","z":"ᴢ"};
+  var inp=document.getElementById("input"),out=document.getElementById("output"),cp=document.getElementById("copy-btn"),ok=document.getElementById("copied"),t;
+  inp.addEventListener("input",function(){clearTimeout(t);t=setTimeout(function(){var v=inp.value||"hello world",r="";for(var i=0;i<v.length;i++)r+=SC[v[i].toLowerCase()]||v[i];out.textContent=r},50)});
+  cp.addEventListener("click",function(){if(out.textContent){navigator.clipboard.writeText(out.textContent);cp.classList.add("hidden");ok.classList.remove("hidden");setTimeout(function(){ok.classList.add("hidden");cp.classList.remove("hidden")},1500)}});
+})();
+</script>
