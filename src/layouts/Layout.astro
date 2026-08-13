@@ -1,4 +1,8 @@
 ---
+import "@fontsource-variable/outfit/index.css";
+import "@fontsource/jetbrains-mono/latin-400.css";
+import "@fontsource/jetbrains-mono/latin-500.css";
+
 export interface Props {
   ogImage?: string;
   title?: string;
@@ -17,14 +21,11 @@ const defaultOgImage = ogImage || "/og-image.png";
     {title ? <title>{title}</title> : null}
     {description ? <meta name="description" content={description} /> : null}
     {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#059669" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:image" content={`https://small-text-generator.com${defaultOgImage}`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:image" content={`https://small-text-generator.com${defaultOgImage}`} />
     <slot name="extra-head" />
   </head>
