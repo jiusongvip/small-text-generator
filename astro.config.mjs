@@ -3,7 +3,7 @@ import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://small-text-generator.com",
+  site: "https://small-text-gen.com",
   trailingSlash: "never",
   integrations: [sitemap()],
   vite: {
