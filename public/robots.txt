@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://small-text-generator.com/sitemap.xml
+Sitemap: https://www.small-text-gen.com/sitemap.xml
