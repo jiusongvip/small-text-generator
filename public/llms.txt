@@ -20,23 +20,26 @@ The tool maps each regular character to its corresponding Unicode superscript, s
 ## Site Structure
 
 ### Main Tool
-- / — Full small text generator with all 9 styles, scene previews, platform picker
+- [Small Text Generator](https://www.small-text-gen.com/) — Full small text generator with all 9 styles, scene previews, platform picker
 
 ### Dedicated Tool Pages (with complete character mapping tables)
-- /superscript-text — Superscript text generator with A-Z mapping
-- /subscript-text — Subscript text generator with gap documentation
-- /small-caps-text — Small caps text generator (100% alphabet coverage)
-- /tiny-numbers — Tiny numbers generator with superscript/subscript digits
+- [Superscript Text Generator](https://www.small-text-gen.com/superscript-text/) — Superscript text generator with A-Z mapping
+- [Subscript Text Generator](https://www.small-text-gen.com/subscript-text/) — Subscript text generator with gap documentation
+- [Small Caps Text Generator](https://www.small-text-gen.com/small-caps-text/) — Small caps text generator (100% alphabet coverage)
+- [Tiny Numbers Generator](https://www.small-text-gen.com/tiny-numbers/) — Tiny numbers generator with superscript/subscript digits
 
 ### Blog (Platform-Specific Guides)
-- /blog — Blog index with all guides
-- /blog/small-text-for-social-media — Instagram, TikTok, Twitter/X guide (~1,500 words)
-- /blog/small-text-for-discord — Discord messages, nicknames, status guide (~1,200 words)
-- /blog/small-text-for-gaming — Steam, Valorant, Fortnite, LoL compatibility guide (~1,000 words)
+- [Blog Index](https://www.small-text-gen.com/blog/) — Blog index with all guides
+- [Small Text for Social Media](https://www.small-text-gen.com/blog/small-text-for-social-media/) — Instagram, TikTok, Twitter/X guide (~1,500 words)
+- [Small Text for Discord](https://www.small-text-gen.com/blog/small-text-for-discord/) — Discord messages, nicknames, status guide (~1,200 words)
+- [Small Text for Gaming](https://www.small-text-gen.com/blog/small-text-for-gaming/) — Steam, Valorant, Fortnite, LoL compatibility guide (~1,000 words)
 
 ### Other Pages
-- /about — About the tool, technical architecture, privacy commitment
-- /privacy — Privacy policy (zero data collection)
+- [About](https://www.small-text-gen.com/about/) — About the tool, technical architecture, who builds it
+- [FAQ](https://www.small-text-gen.com/faq/) — Answers on Unicode small text, platform compatibility, numbers, and search indexing
+- [Privacy Policy](https://www.small-text-gen.com/privacy/) — What is and is not collected, including hosting and analytics disclosure
+- [Terms of Service](https://www.small-text-gen.com/terms/) — Usage terms, content ownership, disclaimers
+- [Contact](https://www.small-text-gen.com/contact/) — Feedback, bug reports, and suggestions
 
 ## Where Small Text Works
 - Instagram bio and captions

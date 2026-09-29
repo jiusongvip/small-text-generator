@@ -19,13 +19,25 @@ const ogUrl = canonicalUrl || `https://www.small-text-gen.com${Astro.url.pathnam
 <html lang="en">
   <head>
     <link rel="preload" as="font" type="font/woff2" href={outfitLatinUrl} crossorigin />
-    <!-- Google tag (gtag.js) -->
-    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-JZ37E49EB3"></script>
+    <!-- Google tag (gtag.js): fetched only once the page is idle, so its 174KB does not compete with first paint -->
     <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-JZ37E49EB3');
+      function loadGtag(){
+        if (document.getElementById('ga4-src')) return;
+        var s = document.createElement('script');
+        s.id = 'ga4-src'; s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-JZ37E49EB3';
+        document.head.appendChild(s);
+      }
+      function scheduleGtag(){
+        if ('requestIdleCallback' in window) requestIdleCallback(loadGtag, { timeout: 3000 });
+        else setTimeout(loadGtag, 200);
+      }
+      if (document.readyState === 'complete') scheduleGtag();
+      else window.addEventListener('load', scheduleGtag);
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
