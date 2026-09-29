@@ -2,9 +2,11 @@
 import "@fontsource-variable/outfit/index.css";
 import "@fontsource/jetbrains-mono/latin-400.css";
 import "@fontsource/jetbrains-mono/latin-500.css";
+import outfitLatinUrl from "@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2";
 
 export interface Props {
   title: string;
+  seoTitle?: string;
   description: string;
   date?: string;
   keywords?: string;
@@ -13,6 +15,7 @@ export interface Props {
 
 const {
   title,
+  seoTitle,
   description,
   date = new Date().toISOString().split("T")[0],
   keywords = "small text, unicode text, tiny text",
@@ -28,6 +31,7 @@ const readTime = Math.max(1, Math.ceil(description.split(/\s+/).length / 200));
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preload" as="font" type="font/woff2" href={outfitLatinUrl} crossorigin />
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-JZ37E49EB3"></script>
     <script is:inline>
@@ -38,7 +42,7 @@ const readTime = Math.max(1, Math.ceil(description.split(/\s+/).length / 200));
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{title} | SmallTextGen Blog</title>
+    <title>{seoTitle ?? title} | SmallTextGen</title>
     <meta name="description" content={description} /><meta name="robots" content="index, follow" />
     {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
     <meta property="og:title" content={`${title} | SmallTextGen`} />

@@ -2,6 +2,7 @@
 import "@fontsource-variable/outfit/index.css";
 import "@fontsource/jetbrains-mono/latin-400.css";
 import "@fontsource/jetbrains-mono/latin-500.css";
+import outfitLatinUrl from "@fontsource-variable/outfit/files/outfit-latin-wght-normal.woff2";
 
 export interface Props {
   ogImage?: string;
@@ -11,10 +12,13 @@ export interface Props {
 }
 const { ogImage, title, description, canonicalUrl } = Astro.props;
 const defaultOgImage = ogImage || "/og-image.png";
+const ogImageUrl = `https://www.small-text-gen.com${defaultOgImage}`;
+const ogUrl = canonicalUrl || `https://www.small-text-gen.com${Astro.url.pathname}`;
 ---
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="preload" as="font" type="font/woff2" href={outfitLatinUrl} crossorigin />
     <!-- Google tag (gtag.js) -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-JZ37E49EB3"></script>
     <script is:inline>
@@ -31,10 +35,18 @@ const defaultOgImage = ogImage || "/og-image.png";
     {canonicalUrl ? <link rel="canonical" href={canonicalUrl} /> : null}
     <meta name="theme-color" content="#059669" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta property="og:image" content={`https://www.small-text-gen.com${defaultOgImage}`} />
+    {title ? <meta property="og:title" content={title} /> : null}
+    {description ? <meta property="og:description" content={description} /> : null}
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={ogUrl} />
+    <meta property="og:site_name" content="SmallTextGen" />
+    <meta property="og:image" content={ogImageUrl} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta name="twitter:image" content={`https://www.small-text-gen.com${defaultOgImage}`} />
+    <meta name="twitter:card" content="summary_large_image" />
+    {title ? <meta name="twitter:title" content={title} /> : null}
+    {description ? <meta name="twitter:description" content={description} /> : null}
+    <meta name="twitter:image" content={ogImageUrl} />
     <slot name="extra-head" />
   </head>
   <body class="min-h-[100dvh] font-sans">

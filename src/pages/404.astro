@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Page Not Found | SmallTextGen"
+  description="The page you are looking for does not exist. Use the free small text generator to create tiny Unicode text."
+>
+  <Fragment slot="extra-head">
+    <meta name="robots" content="noindex, follow" />
+  </Fragment>
+
+  <header class="sticky top-0 z-50 border-b border-zinc-200/80 bg-zinc-50/90 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/90">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2.5 font-semibold text-lg tracking-tight text-zinc-900 dark:text-zinc-100">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-600 text-white text-sm font-bold">s</span>
+        <span class="hidden sm:inline">SmallTextGen</span>
+      </a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <a href="/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Tool</a>
+        <a href="/blog/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Blog</a>
+        <a href="/about/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto flex max-w-2xl flex-col items-center px-4 py-24 text-center">
+    <h1 class="mb-3 text-4xl font-bold tracking-tighter text-zinc-900 dark:text-zinc-100 md:text-5xl">Page Not Found</h1>
+    <p class="mb-10 text-base leading-relaxed text-zinc-500 dark:text-zinc-400">
+      The page you are looking for doesn't exist or has moved. Head back to the free small text generator and keep going.
+    </p>
+    <div class="flex flex-col items-center gap-3 sm:flex-row">
+      <a href="/" class="inline-flex items-center gap-2 rounded-xl bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-accent-600/25 hover:bg-accent-700 transition-all active:scale-[0.97]">
+        Open Small Text Generator
+      </a>
+      <a href="/blog/" class="inline-flex items-center gap-2 rounded-xl border border-zinc-200 px-6 py-3 text-sm font-semibold text-zinc-700 hover:border-accent-600 hover:text-accent-600 transition-colors dark:border-zinc-800 dark:text-zinc-300">
+        Browse Guides
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-zinc-200 bg-white py-8 dark:border-zinc-800 dark:bg-zinc-900/50">
+    <div class="mx-auto flex max-w-3xl flex-col items-center gap-4 px-4 text-center sm:flex-row sm:justify-between">
+      <p class="text-xs text-zinc-400 dark:text-zinc-500">&copy; 2026 SmallTextGen. Free online tool. No ads, no sign-up.</p>
+      <nav class="flex gap-6 text-xs text-zinc-400 dark:text-zinc-500">
+        <a href="/privacy/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Privacy</a>
+        <a href="/about/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">About</a>
+        <a href="/faq/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">FAQ</a>
+      </nav>
+    </div>
+  </footer>
+</Layout>
