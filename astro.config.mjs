@@ -5,6 +5,9 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://www.small-text-gen.com",
   trailingSlash: "always",
+  build: {
+    inlineStylesheets: "always",
+  },
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()],
