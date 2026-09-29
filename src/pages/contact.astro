@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout
+  title="Contact SmallTextGen - Feedback, Bugs &amp; Suggestions"
+  description="Get in touch with the SmallTextGen team. Report a rendering issue, suggest a new Unicode style, or ask about platform compatibility — every message gets a human reply."
+  canonicalUrl="https://www.small-text-gen.com/contact/"
+>
+  <header class="sticky top-0 z-50 border-b border-zinc-200/80 bg-zinc-50/90 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/90">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
+      <a href="/" class="flex items-center gap-2.5 font-semibold text-lg tracking-tight text-zinc-900 dark:text-zinc-100">
+        <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-600 text-white text-sm font-bold">s</span>
+        <span class="hidden sm:inline">SmallTextGen</span>
+      </a>
+      <nav class="flex items-center gap-4 text-sm font-medium text-zinc-500 dark:text-zinc-400">
+        <a href="/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Tool</a>
+        <a href="/blog/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">Blog</a>
+        <a href="/faq/" class="hover:text-accent-600 dark:hover:text-accent-400 transition-colors">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="mx-auto max-w-3xl px-4 pt-16 pb-16">
+    <h1 class="mb-4 text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100">Contact</h1>
+    <p class="mb-10 text-base leading-relaxed text-zinc-500 dark:text-zinc-400">SmallTextGen is an independent project read by its makers. Every message reaches a human, and user feedback has already shaped most of the styles in the tool.</p>
+
+    <div class="mb-12 rounded-2xl border border-accent-200 bg-gradient-to-br from-accent-50 to-accent-100/50 p-8 text-center dark:border-accent-900/40 dark:from-accent-950/40 dark:to-accent-950/20">
+      <h2 class="mb-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Email us directly</h2>
+      <p class="mb-6 text-sm text-zinc-500 dark:text-zinc-400">One inbox, checked daily. We aim to reply within a few business days.</p>
+      <a href="mailto:hello@small-text-gen.com" class="inline-flex items-center gap-2 rounded-xl bg-accent-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-accent-600/25 hover:bg-accent-700 transition-all active:scale-[0.97]">
+        hello@small-text-gen.com
+      </a>
+    </div>
+
+    <div class="space-y-10 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">What to write about</h2>
+        <ul class="list-disc pl-5 space-y-2">
+          <li><strong>Platform rendering issues:</strong> a style that displays as boxes or blanks on a specific app or device — tell us the platform and the text you pasted.</li>
+          <li><strong>New style requests:</strong> Unicode alphabets or symbol sets you would like to see in the generator.</li>
+          <li><strong>Content suggestions:</strong> guides or examples that would have helped you when you were looking for small text.</li>
+          <li><strong>Anything else:</strong> corrections, questions about the tool, or partnership ideas.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="mb-3 text-lg font-semibold text-zinc-800 dark:text-zinc-200">Before you write</h2>
+        <p>Quick answers to the most common questions live on the <a href="/faq/" class="text-accent-600 hover:underline">FAQ page</a>, and platform-by-platform details are covered in the <a href="/blog/" class="text-accent-600 hover:underline">guides</a>. If something there was wrong or missing, though, that is exactly the feedback we want to hear.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-zinc-200 bg-white py-8 dark:border-zinc-800 dark:bg-zinc-900/50">
+    <div class="mx-auto flex max-w-3xl flex-col items-center gap-4 px-4 text-center sm:flex-row sm:justify-between">
+      <p class="text-xs text-zinc-400 dark:text-zinc-500">&copy; 2026 SmallTextGen. Built and maintained by the SmallTextGen team.</p>
+      <nav class="flex gap-6 text-xs text-zinc-400 dark:text-zinc-500">
+        <a href="/privacy/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Privacy</a>
+        <a href="/terms/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Terms</a>
+        <a href="/about/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">About</a>
+        <a href="/contact/" class="hover:text-zinc-600 dark:hover:text-zinc-300 transition-colors">Contact</a>
+      </nav>
+    </div>
+  </footer>
+</Layout>
